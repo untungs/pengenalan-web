@@ -21,7 +21,7 @@
         <p>JavaScript adalah sebuah bahasa pemrograman yang dirancang untuk penggunaan pada browser (peramban) web.</p>
         <p>JavaScript sama sekali tidak berhubungan dengan <a href="https://en.wikipedia.org/wiki/Java_(software_platform)">platform software Java milik Oracle</a>, jadi memang namanya agak menyesatkan.</p>
         <p><b>JavaScript</b> adalah bahasa pemograman web yang bersifat <em>Client Side Programming Language.</em></p>
-        <p><strong>Client Side Programming Language</strong> adalah tipe bahasa pemograman yang pemrosesannya dilakukan oleh <em>client</em>.</p>
+        <p><b>Client Side Programming Language</b> adalah tipe bahasa pemograman yang pemrosesannya dilakukan oleh <em>client</em>.</p>
         <p>Aplikasi <em>client</em> yang dimaksud merujuk kepada <i>web browser</i> seperti <b>Google Chrome</b> dan <b>Mozilla Firefox</b>.</p>
         <p>Jenis bahasa pemograman <em>Client Side</em> berbeda dengan bahasa pemograman <em>Server Side</em> seperti PHP, di mana untuk <em>server side</em> seluruh kode program dijalankan di sisi server.</p>
         <p>Untuk menjalankan <b>JavaScript</b>, kita hanya membutuhkan aplikasi <i>text editor</i>, dan </i>web browser</i>.</p>
@@ -59,26 +59,57 @@
 
         <p>Sebuah script JavaScript diapit oleh tag <code>&lt;script&gt;&lt;/script&gt;</code>. Namun untuk lebih memperjelas penggunaan JavaScript biasanya ditambahkan attribut <code>language</code> atau <code>type</code>, contoh seperti berikut:</p>
 <pre><code>
-<script language="javascript">
-\/\/ javascript kode disini...
-</script>
+&lt;script language="javascript"&gt;
+// javascript kode disini...
+&lt;/script&gt;
 </code></pre>
 
-        atau:
+        <p>Atau:</p>
 <pre><code>
-<script language="text/javascript">
-\/\/ javascript kode disini...
-</script>
+&lt;script language="text/javascript"&gt;
+// javascript kode disini...
+&lt;/script&gt;
 </code></pre>
         
-        <p>Tag &lt;script&gt; dapat anda letakkan pada level global yaitu pada tag &lt;head&gt;&lt;/head&gt; atau secara lokal dimana pun dalam tag &lt;body&gt;&lt;/body&gt;.</p>
+        <p>Tag <code>&lt;script&gt;</code> dapat anda letakkan pada level global yaitu pada tag <code>&lt;head&gt;&lt;/head&gt;</code> atau secara lokal dimana pun dalam tag <code>&lt;body&gt;&lt;/body&gt;</code>.</p>
+        <p>Contoh:</p>
+<pre><code>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Another Basic Page&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+// JavaScript goes here
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Here&rsquo;s another basic page&lt;/h1&gt;
+&lt;script type="text/javascript"&gt;
+// JavaScript can also go here
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+      <h3>JavaScript External</h3>
+      <p>Script JavaScript dapat diletakkan terpisah dari file .html. Script tersebut disimpan dalam file berekstensi .js. Untuk menggunakannya script tersebut dapat menggunakan tag <code>&lt;script&gt;</code> dengan atribut <code>src</code> pada tag <code>&lt;head&gt;&lt;/head&gt;.</p>
+      <p>Contoh:</p>
+<pre><code>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Another Basic Page&lt;/title&gt;
+&lt;script type="text/javascript" src="externalfile.js"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Here&rsquo;s another basic page&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>      
       </section>
 
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+      <section>
+        <h3
       </section>
 
       <footer>
