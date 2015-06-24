@@ -175,7 +175,7 @@ section {
 }
 
 figure {
-  text-align: center
+  text-align: center;
 }
 
 small {
@@ -254,9 +254,9 @@ footer {
     padding:15px;
   }
 
-  header ul {
+/*  header ul {
     display:none;
-  }
+  }*/
 }
 
 @media print {
