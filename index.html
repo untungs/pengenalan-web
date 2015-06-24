@@ -5,7 +5,6 @@
     <title>Pengenalan Web by UntungS</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
@@ -13,22 +12,33 @@
       <header>
         <h1>Pengenalan Web</h1>
         <p>Tugas untuk mata kuliah Pengenalan Web</p>
+        <h3>Materi JavaScript</h3>
+        <nav>
+          <ul>
+            <li><a href="#pengertian">Pengertian JavaScript</a></li>
+            <li><a href="#clientside">Client Side Scripting</a></li>
+            <li><a href="#penggunaan">Menggunakan JavaScript</a></li>
+          </ul>
+        </nav>
       </header>
       
-      <section>
+      <section id="pengertian">
         <h2>Pengertian JavaScript</h2>
+        <figure>
+          <img src="images/js.png">
+          <figcaption>Logo JavaScript</figcaption>
+        </figure>
 
         <p>JavaScript adalah sebuah bahasa pemrograman yang dirancang untuk penggunaan pada browser (peramban) web.</p>
         <p>JavaScript sama sekali tidak berhubungan dengan <a href="https://en.wikipedia.org/wiki/Java_(software_platform)">platform software Java milik Oracle</a>, jadi memang namanya agak menyesatkan.</p>
         <p><b>JavaScript</b> adalah bahasa pemograman web yang bersifat <em>Client Side Programming Language.</em></p>
-        <p><b>Client Side Programming Language</b> adalah tipe bahasa pemograman yang pemrosesannya dilakukan oleh <em>client</em>.</p>
-        <p>Aplikasi <em>client</em> yang dimaksud merujuk kepada <i>web browser</i> seperti <b>Google Chrome</b> dan <b>Mozilla Firefox</b>.</p>
+        <p><b>Client Side Programming Language</b> adalah tipe bahasa pemograman yang pemrosesannya dilakukan oleh <em>client</em>. Aplikasi <em>client</em> yang dimaksud merujuk kepada <i>web browser</i> seperti <b>Google Chrome</b> dan <b>Mozilla Firefox</b>.</p>
         <p>Jenis bahasa pemograman <em>Client Side</em> berbeda dengan bahasa pemograman <em>Server Side</em> seperti PHP, di mana untuk <em>server side</em> seluruh kode program dijalankan di sisi server.</p>
-        <p>Untuk menjalankan <b>JavaScript</b>, kita hanya membutuhkan aplikasi <i>text editor</i>, dan </i>web browser</i>.</p>
-        <p><b>JavaScript</b> memiliki fitur: <em>high-level programming language, client-side, loosely tiped</em>, dan berorientasi objek.</p>
+        <p>Untuk menjalankan JavaScript, kita hanya membutuhkan aplikasi <i>text editor</i>, dan </i>web browser</i>.</p>
+        <p>JavaScript memiliki fitur: <em>high-level programming language, client-side, loosely tiped</em>, dan berorientasi objek.</p>
       </section>
 
-      <section>
+      <section id="clientside">
         <h2>Client Side Scripting</h2>
 
         <p>Client Side Scripting adalah bahasa pemrograman yang proses pengolahannya dilakukan di komputer pengunjung (Client). Ketika seseorang ingin melihat suatu website, maka website yang bertipe ini akan sepenuhnya di download dan diproses di komputer masing-masing sehingga siapapun yang melihat website kita bisa mengambil seluruh Script yang ditulis oleh pembuatnya.</p>
@@ -52,68 +62,78 @@
         </ul>
       </section>
 
-      <section>
+      <section id="penggunaan">
         <h2>Menggunakan JavaScript</h2>
 
         <h3>JavaScript Internal</h3>
 
         <p>Sebuah script JavaScript diapit oleh tag <code>&lt;script&gt;&lt;/script&gt;</code>. Namun untuk lebih memperjelas penggunaan JavaScript biasanya ditambahkan attribut <code>language</code> atau <code>type</code>, contoh seperti berikut:</p>
-<pre><code>
-&lt;script language="javascript"&gt;
-// javascript kode disini...
+<pre><code>&lt;script language="javascript"&gt;
+  // javascript kode disini...
 &lt;/script&gt;
 </code></pre>
 
         <p>Atau:</p>
-<pre><code>
-&lt;script language="text/javascript"&gt;
-// javascript kode disini...
+<pre><code>&lt;script language="text/javascript"&gt;
+  // javascript kode disini...
 &lt;/script&gt;
 </code></pre>
         
         <p>Tag <code>&lt;script&gt;</code> dapat anda letakkan pada level global yaitu pada tag <code>&lt;head&gt;&lt;/head&gt;</code> atau secara lokal dimana pun dalam tag <code>&lt;body&gt;&lt;/body&gt;</code>.</p>
         <p>Contoh:</p>
-<pre><code>
-&lt;!doctype html&gt;
+<pre><code>&lt;!doctype html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Another Basic Page&lt;/title&gt;
-&lt;script type="text/javascript"&gt;
-// JavaScript goes here
-&lt;/script&gt;
+  &lt;title&gt;Another Basic Page&lt;/title&gt;
+  &lt;script type="text/javascript"&gt;
+    // JavaScript goes here
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;h1&gt;Here&rsquo;s another basic page&lt;/h1&gt;
-&lt;script type="text/javascript"&gt;
-// JavaScript can also go here
-&lt;/script&gt;
+  &lt;h1&gt;Here&rsquo;s another basic page&lt;/h1&gt;
+  &lt;script type="text/javascript"&gt;
+    // JavaScript can also go here
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
-      <h3>JavaScript External</h3>
-      <p>Script JavaScript dapat diletakkan terpisah dari file .html. Script tersebut disimpan dalam file berekstensi .js. Untuk menggunakannya script tersebut dapat menggunakan tag <code>&lt;script&gt;</code> dengan atribut <code>src</code> pada tag <code>&lt;head&gt;&lt;/head&gt;.</code></p>
-      <p>Contoh:</p>
-<pre><code>
-&lt;!doctype html&gt;
+        <h3>JavaScript Eksternal</h3>
+        <p>Script JavaScript dapat diletakkan terpisah dari file .html. Script tersebut disimpan dalam file berekstensi .js. Untuk menggunakannya script eksternal dapat menggunakan tag <code>&lt;script&gt;</code> dengan atribut <code>src</code> pada tag <code>&lt;head&gt;&lt;/head&gt;</code>.</p>
+        <p>Contoh:</p>
+<pre><code>&lt;!doctype html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Another Basic Page&lt;/title&gt;
-&lt;script type="text/javascript" src="externalfile.js"&gt;
+  &lt;title&gt;Another Basic Page&lt;/title&gt;
+  &lt;script type="text/javascript" src="externalfile.js"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;h1&gt;Here&rsquo;s another basic page&lt;/h1&gt;
+  &lt;h1&gt;Here&rsquo;s another basic page&lt;/h1&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>      
+</code></pre>
+
+        <h3>Event di HTML</h3>
+
+        <p>Event di HTML adalah hal-hal yang terjadi pada elemen HTML. JavaScript dapat memberikan reaksi terhadap event-event ini.</p>
+        <p>Beberapa contoh event di HTML:</p>
+        <ul>
+          <li>Saat halaman web HTML selesai loading</li>
+          <li>Saat isi kotak input berubah</li>
+          <li>Saat tombol diklik</li>
+        </ul>
+        <p>Contoh kode:</p>
+        <pre><code>&lt;button onclick=&#039;alert(&quot;Halo, apa kabar?&quot;);&#039;&gt;Klik Saya&lt;/button&gt;</code></pre>
+        <button onclick='alert("Halo, apa kabar?");'>Klik Saya</button>
       </section>
 
 
       <footer>
         <p>This project is maintained by <a href="https://github.com/untungs">untungs</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on GitHub Pages</small></p>
       </footer>
     </div>
+
     <script src="javascripts/scale.fix.js"></script>
     
   </body>

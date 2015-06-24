@@ -1,8 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 }
@@ -38,27 +36,27 @@ a {
   text-decoration:none;
 }
 
-a small {
+/*a small {
   font-size:11px;
   color:#777;
   margin-top:-0.6em;
   display:block;
-}
+}*/
 
 .wrapper {
   width:860px;
   margin:0 auto;
 }
 
-blockquote {
+/*blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
-}
+}*/
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family: Consolas, Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
   font-size:12px;
 }
@@ -71,7 +69,7 @@ pre {
   overflow-x: auto;
 }
 
-table {
+/*table {
   width:100%;
   border-collapse:collapse;
 }
@@ -89,7 +87,7 @@ dt {
 
 th {
   color:#444;
-}
+}*/
 
 img {
   max-width:100%;
@@ -101,6 +99,14 @@ header {
   position:fixed;
 }
 
+header ul {
+  list-style:none;
+  height:40px;
+  font-size: 0.9em;
+  padding:0;
+}
+
+/*
 header ul {
   list-style:none;
   height:40px;
@@ -142,7 +148,9 @@ strong {
   color:#222;
   font-weight:700;
 }
+*/
 
+/*
 header ul li + li {
   width:88px;
   border-left:1px solid #fff;
@@ -158,6 +166,7 @@ header ul a strong {
   display:block;
   color:#222;
 }
+*/
 
 section {
   width:500px;
@@ -165,16 +174,20 @@ section {
   padding-bottom:50px;
 }
 
+figure {
+  text-align: center
+}
+
 small {
   font-size:11px;
 }
 
-hr {
+/*hr {
   border:0;
   background:#e5e5e5;
   height:1px;
   margin:0 0 20px;
-}
+}*/
 
 footer {
   width:270px;
@@ -207,9 +220,9 @@ footer {
     margin:0 0 20px;
   }
 
-  header a small {
+/*  header a small {
     display:inline;
-  }
+  }*/
 
   header ul {
     position:absolute;
